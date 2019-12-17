@@ -2,7 +2,9 @@
 
 const arrEx6 = [2, 4, 6, 7, 9, 12];
 
-// code here
+const add2 = (arr) => arr.map(e => e + 2);
+
+add2(arrEx6);
 
 // ######################################### //
 
@@ -11,8 +13,18 @@ const arrEx6 = [2, 4, 6, 7, 9, 12];
 const arrEx7 = [1, 2, 3];
 
 const checkSum = (arr) => {
-  // code here
+  let result = arr.reduce((acc, cV) => {
+    return acc + cV;
+    });
+  if(result % 2 === 0){
+    return "even"
+  }else {
+    return "odd"
+  }
 };
+
+checkSum(arrEx7);
+
 
 // ######################################### //
 
@@ -21,8 +33,11 @@ const checkSum = (arr) => {
 const arrEx8 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const evenNumbers = (arr) => {
-  // code here
+  let evenArr = arr.filter(e => e % 2 === 0);
+  return evenArr;
 };
+
+evenNumbers(arrEx8);
 
 // ######################################### //
 
@@ -31,8 +46,11 @@ const evenNumbers = (arr) => {
 const arrEx9 = ['a', 'c', 'g', 'r', 'w', 'e', 's', 'l', 'z', 'q', 'b', 'd'];
 
 const sortLetters = (arr) => {
-  // code here
+  let sortedArr = arr.sort((a, b) => a.localeCompare(b));
+  return sortedArr;
 };
+
+sortLetters(arrEx9);
 
 // ######################################### //
 
