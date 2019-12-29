@@ -56,25 +56,25 @@ sortLetters(arrEx9);
 
 //! Make a function that takes a number and returns that number multiplied by 2.
 
-// code here
+const multipliedByTwo = num => num * 2;
 
 // ######################################### //
 
 //! Using any array method and the function built in the previous question, make a loop that print the elements of an array multiplied by 2.
 
-// code here
+arr.map(e => multipliedByTwo(e));
 
 // ######################################### //
 
 //! Create a function that takes a number and returns true if the number is odd and false if the number is even
 
-// code here
+const oddOrEven = num => num % 2 !== 0;
 
 // ######################################### //
 
 //! Using any array method and the function built in the previous question, make a loop that return only the odd numbers.
 
-// code here
+arr.filter(e => oddOrEven(e));
 
 // ######################################### //
 
